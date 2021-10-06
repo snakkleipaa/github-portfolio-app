@@ -28,7 +28,7 @@ App is ran at http://localhost:3000
 
 GitHub REST API requires for authethication in order to send more reasonable amount of requests. In order to have the requests working properly, **.env** file with **AUTH= _insert personal access token_** needs to be created with valid access token from GitHub.
 
-Working example of the app can be found online at 
+Working example of the app can be found online at https://github-portfolio-apphe.herokuapp.com/
 
 ## Usage
 
