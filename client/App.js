@@ -24,6 +24,11 @@ const App = () => {
           <input {...usernameInput} />
           <button>Search</button>
         </form>
+
+        {error && (
+          <p className="error"> {error} </p>
+        )}
+
       </div>
     )
   }
