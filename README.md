@@ -38,7 +38,7 @@ Type wanted username into the search bar and click **Search** to show the user a
 
 Currently the username has to be written correctly to show results.
 
-If user is not found, the view does not update and error message will be shown in the console. Error message could be developed in the future.
+If user is not found or the data received is empty, the view does not update and an error message will be shown.
 
 ## References
 
