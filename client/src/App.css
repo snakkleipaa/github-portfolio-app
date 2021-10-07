@@ -102,4 +102,10 @@ body {
   line-height: 1.75rem;
 }
 
+/*Error message*/
+.error {
+  color: #D8000C;
+  background-color: #FFBABA;
+}
+
 

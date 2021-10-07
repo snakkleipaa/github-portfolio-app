@@ -10,7 +10,9 @@ const App = () => {
 
   const usernameInput = useField('text');
   const [username, setUsername] = useState('');
-  const user = useUser(username);
+  const {user, error} = useUser(username);
+
+  console.log(error);
 
   const fetch = (e) => {
     e.preventDefault();  
@@ -28,6 +30,7 @@ const App = () => {
     )
   }
 
+
   return (
     <div className="app">
       <form onSubmit={fetch}>
@@ -35,11 +38,15 @@ const App = () => {
         <button>Search</button>
       </form>
 
+      {error && (
+        <p className="error"> {error} </p>
+      )}
+
       <User user={user.data[0].owner} />
 
       <div className="container">
         {user.data.map(repository =>
-            <div className="column">
+            <div className="column" key={repository.id}>
               <Repository repository={repository} key={repository.full_name} />
             </div>
           )
